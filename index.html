@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Visit 9 Method</title>
+<meta name="description" content="Closing the gap between the care you recommend and the care your patients actually complete.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="prog" id="prog"></div>
+
+<nav class="nav">
+  <div class="in">
+    <div class="brand">
+      <span class="spine"><i class="on"></i><i class="on"></i><i></i></span>
+      <span>The Visit 9 Method</span>
+    </div>
+    <div class="parts">
+      <button class="pbtn on" data-part="1">1 · Problem</button>
+      <button class="pbtn" data-part="2">2 · System</button>
+      <button class="pbtn" data-part="3">3 · Build</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== PART 1 ==================== -->
+<div class="part on" id="part1">
+<div class="wrap">
+
+  <header class="cover">
+    <div class="eyebrow"><i></i>Part 1 of 3 · The Problem</div>
+    <h1>The care you recommend.<br>The care they <span class="hl">actually complete.</span></h1>
+    <p class="dek">The distance between those two is the most expensive number in your practice, and nobody in the building is assigned to it.</p>
+    <div class="by">By Dr. [Name], DC · [Practice Name], [City]</div>
+
+    <div class="howto rv">
+      <div class="t">How to read this training</div>
+      <p>Everything here is a mechanism, a number, or an instruction. Where something is well established it is stated plainly. Where a figure depends on your practice it is marked <b>[measure yours]</b>, and Part 3 shows you how to get it.</p>
+      <p>Nothing is held back for a paid version. Part 2 is the complete build including point values, message copy and compliance. Part 3 is the workbook.</p>
+    </div>
+  </header>
+
+  <!-- DEFINITION -->
+  <section class="rv">
+    <div class="lbl t">The moment this is named after</div>
+    <h2>Every care plan contains one visit that changes everything.</h2>
+    <p class="sub">Not a number on a calendar. A transition every patient goes through.</p>
+
+    <div class="define">
+      <div class="dl">Definition</div>
+      <div class="dt">Visit 9 is the first visit a patient attends for a reason other than pain.</div>
+      <p>Before it, they have a motivator that brings them through your door on its own. After it, they do not.</p>
+      <p>It exists on a 12 visit plan, a 24 and a 36. Where it lands in your practice is something you measure in Part 3. The number is shorthand. <b style="color:#fff">The transition is real.</b></p>
+    </div>
+
+    <p>You do a thorough Day 1. You deliver a Report of Findings, the patient understands the plan and agrees to it. They say yes and they start care.</p>
+    <p>Then the plan and the chart stop matching.</p>
+  </section>
+
+  <!-- INTERACTIVE TIMELINE -->
+  <section class="rv">
+    <div class="lbl">The mechanism</div>
+    <h2>Two gaps. They overlap, and that is the whole problem.</h2>
+    <p class="sub">Your practice has three moments that establish why a patient should keep coming. Patients fall out in the space between them.</p>
+
+    <div class="moments">
+      <div class="mom"><div class="n">1</div><h4>Day 1</h4><p>The patient arrives in pain and experiences your care.</p></div>
+      <div class="mom"><div class="n">2</div><h4>Day 2 · The ROF</h4><p>You establish the problem, the plan and the value. The patient commits.</p></div>
+      <div class="mom"><div class="n">3</div><h4>Progress exam</h4><p>Roughly monthly. Objective evidence, and the commitment renews.</p></div>
+    </div>
+
+    <div class="tool">
+      <div class="toolbar">
+        <span class="tl">Your plan length</span>
+        <div class="seg" id="planSeg">
+          <button data-plan="12">12 visits</button>
+          <button class="on" data-plan="24">24 visits</button>
+          <button data-plan="36">36 visits</button>
+        </div>
+        <button class="play" id="playBtn">▶ Watch a patient drop out</button>
+      </div>
+      <svg id="tlSvg" viewBox="0 0 720 300" role="img" aria-label="Care plan timeline showing the attention gap and relief window overlapping"></svg>
+      <div class="cap"><b>Watch the red zone.</b> The moment a patient starts asking whether they still need care lands inside the stretch where nothing in your practice is scheduled to answer the question. They do not raise it with you. They just start rescheduling.</div>
+    </div>
+
+    <div class="gaps">
+      <div class="gap g1">
+        <div class="gl">Gap 1 · Structural</div>
+        <h4>Nothing is scheduled between the ROF and the re-exam</h4>
+        <p>They get adjusted, leave, come back. The care is happening. The case is not being reinforced. Roughly a month of visits with no formal reminder of the plan or their progress. Nobody is doing anything wrong.</p>
+      </div>
+      <div class="gap g2">
+        <div class="gl">Gap 2 · Clinical</div>
+        <h4>The pain stops before the correction is finished</h4>
+        <p>Improvement around visits 6 to 8 is your care working. It is also the moment the single motivator that brought them through your door disappears, well before the plan is complete.</p>
+      </div>
+    </div>
+
+    <div class="collide">
+      <div class="cl">Why the two together are worse than either alone</div>
+      <p>Either gap on its own is survivable. A patient with no reinforcement who is still in pain keeps coming, because the pain does the work. A patient whose pain resolves inside a well-reinforced plan usually finishes, because the plan is still in front of them.</p>
+      <p><b>It is the overlap that empties your schedule.</b> Everything in Part 2 is built to occupy that space.</p>
+    </div>
+  </section>
+
+  <!-- CURVE -->
+  <section class="rv">
+    <div class="lbl r">What it looks like in the data</div>
+    <h2>Retention does not fall off a cliff. It leaks.</h2>
+    <p class="sub">Toggle the line to see the same practice with the engine running. Your own curve gets built in Part 3, Step 2.</p>
+    <div class="tool">
+      <div class="toolbar">
+        <span class="tl">Patients remaining, by visit</span>
+        <div class="seg" id="curveSeg">
+          <button class="on" data-curve="off">Without the engine</button>
+          <button data-curve="on">With the engine</button>
+        </div>
+      </div>
+      <svg id="curveSvg" viewBox="0 0 720 260" role="img" aria-label="Patient retention curve by visit number"></svg>
+      <div class="cap" id="curveCap"><b>Most practices retain 40 to 60 percent</b>, with the weight of the drop-off landing before the plan is halfway done.</div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="rv">
+    <div class="lbl">The number</div>
+    <h2>Size it with your own figures.</h2>
+    <p class="sub">Compare your PVA against the visits you actually recommend. If you recommend 24 and your PVA is 14, that ten visit difference repeats with every new patient, every month.</p>
+
+    <div class="tool">
+      <div class="calcgrid">
+        <div>
+          <div class="frow"><label>Visits you recommend, average</label><input id="rec" type="number" value="24"></div>
+          <div class="frow"><label>Your PVA <small>[measure yours, Part 3]</small></label><input id="pva" type="number" value="14"></div>
+          <div class="frow"><label>Average revenue per visit</label><input id="rev" type="number" value="65"></div>
+          <div class="frow"><label>New patients per month</label><input id="np" type="number" value="20"></div>
+        </div>
+        <div class="result">
+          <div class="rl">Your annual retention opportunity</div>
+          <div class="rv2 rv-num" id="oppOut" style="font-family:'Space Grotesk';font-weight:700;font-size:44px;line-height:1.02;color:var(--teal-lt);margin:8px 0 6px">$156,000</div>
+          <div style="color:#B9C2CC;font-size:15px">Already recommended. In most cases already sold.</div>
+          <div class="mini">
+            <div><div class="mv" id="gapOut">10</div><div class="ml">visit gap</div></div>
+            <div><div class="mv" id="perOut">$650</div><div class="ml">per patient</div></div>
+            <div><div class="mv" id="monOut">$13,000</div><div class="ml">per month</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-ways">
+        <div class="way a">
+          <div class="wl">Way 1 · From patients you already have</div>
+          <div class="wv" id="wayAmt">$78,000</div>
+          <div class="wd">half of your retention opportunity, recovered</div>
+          <div class="wcost">
+            <div class="wct"><span>What it costs you to produce</span><b id="wayACost">$0</b></div>
+            <div class="wtrack"><div class="wfill a" id="wayABar"></div></div>
+            <div class="wnote">No ad spend. No new exams. The care was already recommended.</div>
+          </div>
+        </div>
+        <div class="wvs">VS</div>
+        <div class="way b">
+          <div class="wl">Way 2 · From new patients</div>
+          <div class="wv" id="wayAmt2">$78,000</div>
+          <div class="wd">the exact same money, produced from scratch</div>
+          <div class="wcost">
+            <div class="wct"><span>What it costs you to produce</span><b id="wayBCost">$10,000</b></div>
+            <div class="wtrack"><div class="wfill b" id="wayBBar"></div></div>
+            <div class="wnote" id="wayBNote">~50 new patients, at a $200 acquisition cost each.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cap">Same money. One version is already sitting in your database. <b>It is an opportunity, not a loss</b>, because some patients stop for reasons no system addresses. It is the size of the prize, not a forecast.</div>
+    </div>
+
+    <div class="note">
+      <div class="nl">And a patient who stops halfway costs you more than the remaining visits</div>
+      <p>Maintenance care they never converted into. Referrals a fully corrected patient sends and a partially corrected one does not. A review you never earned, because they left feeling ambiguous. Reactivation revenue years from now, because what they remember is quitting.</p>
+    </div>
+  </section>
+
+  <!-- REMINDERS -->
+  <section class="rv">
+    <div class="lbl r">The thing you already tried</div>
+    <h2>Appointment reminders do not touch this.</h2>
+    <p class="sub">Click either card to turn it over.</p>
+    <div class="flips">
+      <div class="flip" onclick="this.classList.toggle('on')">
+        <div class="inner">
+          <div class="face front">
+            <div class="fl">What a reminder assumes</div>
+            <h3>"They forgot."</h3>
+            <p>You have reminders running and the gap is still there. Here is the mismatch.</p>
+            <span class="hint">CLICK TO FLIP</span>
+          </div>
+          <div class="face back">
+            <div class="fl">What is actually happening</div>
+            <h3 style="color:#fff">They did not forget. They feel better.</h3>
+            <p>Consciously or not, they decided they no longer need to come. "Reply C to confirm" does not touch that decision. It just gives them a cleaner way to cancel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip" onclick="this.classList.toggle('on')">
+        <div class="inner">
+          <div class="face front">
+            <div class="fl">The blind spot that matters most</div>
+            <h3>It only speaks to people with an appointment.</h3>
+            <p>Three things reminder software cannot do for you.</p>
+            <span class="hint">CLICK TO FLIP</span>
+          </div>
+          <div class="face back">
+            <div class="fl">The three</div>
+            <p style="color:#D5DAE0;font-size:15.5px">No reason to attend beyond the appointment existing. No visibility of their own progress. And <b style="color:#fff">nothing at all for the patient who already stopped</b>, because by definition they have no appointment on the books.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:6px"><b>Reminders solve a memory problem. This is a motivation problem.</b> Different problem, different tool.</p>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="rv">
+    <div class="lbl v">Why a retention engine works</div>
+    <h2>Three mechanisms, all well documented.</h2>
+    <p class="sub">The effects are established. The size of each one in a chiropractic setting is something you measure.</p>
+    <div class="res">
+      <div class="rc">
+        <div class="rn">MECHANISM 01</div>
+        <h4>Visible progress increases completion</h4>
+        <p>People finish things they can see themselves progressing through. It is why a loyalty card issued with two stamps already on it outperforms an empty one.</p>
+        <div class="src">Goal-gradient · Kivetz et al &nbsp;/&nbsp; Endowed progress · Nunes &amp; Drèze</div>
+      </div>
+      <div class="rc">
+        <div class="rn">MECHANISM 02</div>
+        <h4>People work harder to avoid losing</h4>
+        <p>A patient protecting an unbroken streak behaves differently from one pursuing a reward. Whether streaks beat plain points in your practice is worth measuring.</p>
+        <div class="src">Loss aversion · Kahneman &amp; Tversky</div>
+      </div>
+      <div class="rc">
+        <div class="rn">MECHANISM 03</div>
+        <h4>Balances create switching cost</h4>
+        <p>A patient carrying a meaningful balance has a reason to stay that has nothing to do with your clinical skill. Unglamorous, and it works.</p>
+        <div class="src">Sunk cost and endowment effects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="rv">
+    <div class="lbl t">The three principles</div>
+    <h2>Have these three and it works. Miss one and it does not.</h2>
+    <div class="prin">
+      <div class="pr"><div class="pn">1</div><div>
+        <h4>Give them a reason to attend that is not pain</h4>
+        <p>Whatever you build has to mean something to a patient who feels completely fine.</p>
+        <div class="test"><b>Test:</b> if a symptom-free patient would still want to come Thursday, you built it right.</div>
+      </div></div>
+      <div class="pr"><div class="pn">2</div><div>
+        <h4>Make progress visible</h4>
+        <p>The patient must see where they are in the plan and what they have accumulated, without asking anyone.</p>
+        <div class="test"><b>Test:</b> a balance the patient never sees is a spreadsheet, not an engine.</div>
+      </div></div>
+      <div class="pr"><div class="pn">3</div><div>
+        <h4>Reward the behaviour, never the outcome</h4>
+        <p>Reward attending, confirming, rebooking, showing up to the progress exam. Never reward getting better, and never reward saying favourable things about you.</p>
+        <div class="test"><b>Test:</b> behaviour is what you can influence. It is also the compliant position. Both point the same way.</div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- FIT -->
+  <section class="rv">
+    <div class="lbl">Before you go further</div>
+    <h2>Who this is for.</h2>
+    <div class="gaps">
+      <div class="gap" style="background:var(--teal-bg);border-color:#CDE4E1">
+        <div class="gl" style="color:var(--teal)">This is for you if</div>
+        <p style="font-size:15px">You recommend care plans and see a meaningful share go uncompleted. Your PVA is below what your own recommendations imply. You have hundreds of inactive patients nobody has contacted in a year. Your front desk is at capacity. You tried reminders and they changed very little.</p>
+        <p style="font-size:14.5px;color:var(--soft);margin-top:10px">Cash, insurance, PI or a mix. Solo or multi doc. 12, 24 or 36 visit plans.</p>
+      </div>
+      <div class="gap" style="background:var(--red-bg);border-color:#F2D2CA">
+        <div class="gl" style="color:var(--red)">This is not for you if</div>
+        <p style="font-size:15px"><b>Your patients are not starting care in the first place.</b> Everything here happens after a successful Day 1 and Day 2. If patients are not accepting your ROF, that is a different and more urgent problem. Fix that first, nothing here substitutes for it.</p>
+        <p style="font-size:14.5px;color:var(--soft);margin-top:10px">Also not for you if you opened recently and have no patient base, want clinical material, or want new patient marketing.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="next" onclick="goPart(2)">
+    <div><div class="nt">Next: Part 2, The System</div><div class="nd">Six components in build order. Two of them cost nothing and need no software.</div></div>
+    <span class="na">Open Part 2 →</span>
+  </div>
+</div>
+</div>
+
+<!-- ==================== PART 2 ==================== -->
+<div class="part" id="part2">
+<div class="wrap">
+
+  <header class="cover">
+    <div class="eyebrow"><i></i>Part 2 of 3 · The System</div>
+    <h1>The <span class="hl">Retention Engine</span></h1>
+    <p class="dek">Six components, ordered by what you should build first. It does not replace your three retention points. It occupies the weeks between them.</p>
+  </header>
+
+  <section class="rv" style="border-top:none;padding-top:10px">
+    <div class="good">
+      <div class="nl">◆ Read this before anything else</div>
+      <p><b>Components 1 and 2 need no software, no points, no attorney and no budget.</b> They are the two highest-leverage pieces in the system and you can run both this week.</p>
+      <p>If you never build the points program at all, 1, 2 and 6 still work. Start there.</p>
+    </div>
+
+    <div class="index">
+      <div class="ix" onclick="jump('c1')"><span class="n">01</span><span><span class="t">The Progress Exam Bridge</span><span class="d">Gets them to the re-exam and makes it land as evidence</span></span><span class="badge b-free">FREE · THIS WEEK</span></div>
+      <div class="ix" onclick="jump('c2')"><span class="n">02</span><span><span class="t">The Relief Conversation</span><span class="d">Forty seconds at the moment the pain stops</span></span><span class="badge b-free">FREE · THIS WEEK</span></div>
+      <div class="ix" onclick="jump('c3')"><span class="n">03</span><span><span class="t">The Earn List</span><span class="d">What a patient earns credit for</span></span><span class="badge b-build">BUILD</span></div>
+      <div class="ix" onclick="jump('c4')"><span class="n">04</span><span><span class="t">The Streak</span><span class="d">Turns attendance into something they protect</span></span><span class="badge b-build">BUILD</span></div>
+      <div class="ix" onclick="jump('c5')"><span class="n">05</span><span><span class="t">The Reward Menu</span><span class="d">What that credit converts into</span></span><span class="badge b-build">BUILD</span></div>
+      <div class="ix" onclick="jump('c6')"><span class="n">06</span><span><span class="t">The Reactivation Sequence</span><span class="d">Reaches the patients who already stopped</span></span><span class="badge b-fast">FASTEST REVENUE</span></div>
+    </div>
+
+    <div class="tool">
+      <div class="toolbar"><span class="tl">Where each component sits on the plan</span></div>
+      <svg viewBox="0 0 720 230" role="img" aria-label="Component map across the care plan">
+        <line x1="40" y1="120" x2="680" y2="120" stroke="#E5E6E0" stroke-width="2"/>
+        <circle cx="70" cy="120" r="8" fill="#12181F"/><text x="70" y="148" font-family="Space Grotesk" font-size="12" font-weight="700" fill="#12181F" text-anchor="middle">Day 1</text>
+        <circle cx="165" cy="120" r="8" fill="#12181F"/><text x="165" y="148" font-family="Space Grotesk" font-size="12" font-weight="700" fill="#12181F" text-anchor="middle">ROF</text>
+        <circle cx="415" cy="120" r="10" fill="#C2452B"/><text x="415" y="148" font-family="Space Grotesk" font-size="12" font-weight="700" fill="#C2452B" text-anchor="middle">Visit 9</text>
+        <circle cx="530" cy="120" r="8" fill="#12181F"/><text x="530" y="148" font-family="Space Grotesk" font-size="12" font-weight="700" fill="#12181F" text-anchor="middle">Progress exam</text>
+        <circle cx="660" cy="120" r="7" fill="#8A939D"/><text x="660" y="148" font-family="Space Grotesk" font-size="12" font-weight="700" fill="#5B6672" text-anchor="middle">Plan end</text>
+        <rect x="165" y="80" width="368" height="26" rx="7" fill="#E7F2F0"/><text x="349" y="97" font-family="IBM Plex Mono" font-size="11" font-weight="600" fill="#0F766E" text-anchor="middle">01 PROGRESS EXAM BRIDGE</text>
+        <rect x="350" y="46" width="132" height="26" rx="7" fill="#FCF3E3"/><text x="416" y="63" font-family="IBM Plex Mono" font-size="11" font-weight="600" fill="#B45309" text-anchor="middle">02 RELIEF TALK</text>
+        <rect x="70" y="12" width="590" height="26" rx="7" fill="#F0EAFA"/><text x="365" y="29" font-family="IBM Plex Mono" font-size="11" font-weight="600" fill="#6D3FB8" text-anchor="middle">03 · 04 · 05 THE POINTS LAYER RUNS THE WHOLE PLAN</text>
+        <path d="M 415 132 L 415 182 L 255 182" stroke="#2456B8" stroke-width="2" fill="none" stroke-dasharray="5 4"/><polygon points="249,182 257,178 257,186" fill="#2456B8"/>
+        <rect x="90" y="170" width="158" height="26" rx="7" fill="#E9EFFA"/><text x="169" y="187" font-family="IBM Plex Mono" font-size="11" font-weight="600" fill="#2456B8" text-anchor="middle">06 REACTIVATION</text>
+        <text x="169" y="212" font-family="IBM Plex Sans" font-size="11.5" fill="#2456B8" text-anchor="middle">for the patients who already dropped out</text>
+      </svg>
+      <div class="cap">Components 1 and 2 sit directly on top of the overlap from Part 1. Component 6 catches everyone who already fell through it.</div>
+    </div>
+  </section>
+
+  <!-- C1 -->
+  <section class="rv" id="c1">
+    <div class="comp">
+      <div class="chead"><div class="cn">01</div><div><h3>The Progress Exam Bridge</h3><div class="cd">Highest value, easiest to implement, because the appointment already exists.</div></div></div>
+      <div class="cbody">
+        <div class="meta"><span class="mchip">NO SOFTWARE</span><span class="mchip">NO COST</span><span class="mchip">THIS WEEK</span></div>
+        <p>Your progress exam is the third retention point and the strongest one. It is the only moment in the plan where the patient sees objective evidence something changed. Most practices treat it as an administrative appointment. <b>It should be the most important visit in the month.</b></p>
+        <div class="rules">
+          <div class="rule"><span class="rn">01</span><div><b>Book it at the Report of Findings, not later</b><span>It goes on the calendar before the patient leaves Day 2. An appointment that already exists gets attended. One scheduled "when we get closer" competes with everything else in their life.</span></div></div>
+          <div class="rule"><span class="rn">02</span><div><b>Award points for attending</b><span>100 points, the second-largest single award after plan completion. Skip this line if you are not running points yet.</span></div></div>
+          <div class="rule"><span class="rn">03</span><div><b>Send a framing message two days before</b><span>Not a reminder. A frame. The word "measure" is doing the work.</span></div></div>
+          <div class="rule"><span class="rn">04</span><div><b>Send the findings in writing afterwards</b><span>Verbal progress is forgotten by Thursday.</span></div></div>
+        </div>
+        <div class="msg">
+          <div class="mh"><span>Message · two days before</span><span>SMS</span></div>
+          <div class="mb">Wednesday is your progress exam, not a regular visit. We re-measure everything from your first day and you'll see exactly what has changed. It takes about fifteen minutes longer than usual.</div>
+          <div class="why"><b>Why it works:</b> it repositions the appointment from care they receive to evidence they get.</div>
+        </div>
+        <div class="msg">
+          <div class="mh"><span>Message · after the exam</span><span>SMS or email</span></div>
+          <div class="mb">Good exam today. Cervical rotation up from 45 to 62 degrees on the right, and your pain scale is down from 7 to 2. The rotation is the part we're still working on, which is why we've got you through to visit 24.</div>
+          <div class="why">A written summary is re-readable, and it is what a patient shows their spouse when asked why they are still going to the chiropractor.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- C2 -->
+  <section class="rv" id="c2">
+    <div class="comp">
+      <div class="chead"><div class="cn">02</div><div><h3>The Relief Conversation</h3><div class="cd">Forty seconds, by the doctor, at the moment nothing on a screen can help.</div></div></div>
+      <div class="cbody">
+        <div class="meta"><span class="mchip">NO SOFTWARE</span><span class="mchip">40 SECONDS</span><span class="mchip">THE DOC, NOT THE CA</span></div>
+        <p><b>When:</b> at the visit before your relief window, so you arrive ahead of the decision rather than after it. You find your window in Part 3, Step 2.</p>
+        <div class="sstep"><span class="sn">01</span><div><div class="sl">Name what they are feeling before they say it</div><div class="quote">"You're probably feeling quite a bit better at this point."</div></div></div>
+        <div class="sstep"><span class="sn">02</span><div><div class="sl">Validate it</div><div class="quote">"That's exactly what should be happening right about now."</div></div></div>
+        <div class="sstep"><span class="sn">03</span><div><div class="sl">Separate relief from correction</div><div class="quote">"Here's the part most people don't know. Feeling better and being structurally corrected are two different finish lines, and the first one shows up a lot earlier. The pain is settling. What caused the pain isn't finished."</div></div></div>
+        <div class="sstep"><span class="sn">04</span><div><div class="sl">Name the risk plainly, without fear selling</div><div class="quote">"If we stop here, a lot of people are back inside the year with the same thing. If we finish the plan, fewer are."</div></div></div>
+        <div class="sstep"><span class="sn">05</span><div><div class="sl">Hand off to the progress exam</div><div class="quote">"Your progress exam is on the 14th and that's where we actually measure it rather than guess. Sarah's going to book the visits between now and then at the front."</div></div></div>
+        <div class="good">
+          <div class="nl">Why step 5 matters more than it looks</div>
+          <p>You are not asking them to keep coming indefinitely. You are asking them to reach a specific, finite, already-scheduled measurement date. A much smaller request, and it hands them off to your strongest retention point.</p>
+        </div>
+        <p><b>Why the script works:</b> you say the thing the patient is already privately thinking, before they say it. That makes you credible, because you predicted their own experience. And it removes the awkwardness that leads people to quietly reschedule instead of asking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- C3 -->
+  <section class="rv" id="c3">
+    <div class="comp">
+      <div class="chead"><div class="cn">03</div><div><h3>The Earn List</h3><div class="cd">Every action a patient can take that earns points, with a value attached.</div></div></div>
+      <div class="cbody">
+        <div class="meta"><span class="mchip">POINTS LAYER</span><span class="mchip">NEEDS A PLATFORM</span><span class="mchip">ATTORNEY REVIEW FIRST</span></div>
+        <div class="rules">
+          <div class="rule"><span class="rn">01</span><div><b>Only include what the patient can honestly report and you could check</b><span>Ambiguous to the patient means unlogged. Unverifiable to you means leave it off.</span></div></div>
+          <div class="rule"><span class="rn">02</span><div><b>Weight toward behaviours that predict completion</b><span>Rebooking before leaving and attending the progress exam are the two strongest signals.</span></div></div>
+          <div class="rule"><span class="rn">03</span><div><b>Front load the first earn</b><span>They should log something before leaving Day 1. An empty balance does not motivate. A balance of 10 does.</span></div></div>
+        </div>
+        <table id="earnTable">
+          <thead><tr><th>Action</th><th>Points</th><th style="width:120px">Weight</th></tr></thead>
+          <tbody>
+            <tr><td>Log your visit</td><td class="pts">10</td><td><div class="bar"><i data-w="3"></i></div></td></tr>
+            <tr><td>Home exercise check in</td><td class="pts">15</td><td><div class="bar"><i data-w="4"></i></div></td></tr>
+            <tr><td>Rebook before you leave</td><td class="pts">25</td><td><div class="bar"><i data-w="6"></i></div></td></tr>
+            <tr><td>Attend a workshop or class</td><td class="pts">30</td><td><div class="bar"><i data-w="8"></i></div></td></tr>
+            <tr><td>4 visits logged in a row</td><td class="pts">50</td><td><div class="bar"><i data-w="13"></i></div></td></tr>
+            <tr><td>Attend your progress exam</td><td class="pts">100</td><td><div class="bar"><i data-w="25"></i></div></td></tr>
+            <tr><td>Reach the halfway mark</td><td class="pts">150</td><td><div class="bar"><i data-w="38"></i></div></td></tr>
+            <tr><td><b>Complete your full care plan</b></td><td class="pts">400</td><td><div class="bar"><i data-w="100"></i></div></td></tr>
+            <tr><td>Birthday</td><td class="pts">25</td><td><div class="bar"><i data-w="6"></i></div></td></tr>
+            <tr><td>Update contact details</td><td class="pts">10</td><td><div class="bar"><i data-w="3"></i></div></td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <div class="nl">You award these, the patient does not claim them</div>
+          <p>Milestones, plan completion, birthdays and preloaded balances are yours to add. That is also what gives your front desk a natural reason to mention the program.</p>
+        </div>
+        <p style="font-size:15.5px"><b>Totals at completion:</b> roughly 1,300 points on a 12 visit plan, 2,100 on a 24, and 2,900 on a 36. That total is what your reward menu gets built against.</p>
+        <div class="stop">
+          <div class="nl">◆ Notice what is not on this list</div>
+          <p><b>Referrals and reviews.</b> Deliberate, and covered in the compliance section. Do not add them before reading it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- C4 STREAK SIM -->
+  <section class="rv" id="c4">
+    <div class="comp">
+      <div class="chead"><div class="cn">04</div><div><h3>The Streak</h3><div class="cd">Turns attendance into something the patient protects rather than schedules.</div></div></div>
+      <div class="cbody">
+        <div class="meta"><span class="mchip">POINTS LAYER</span><span class="mchip">4 VISITS</span><span class="mchip">50 POINT BONUS</span></div>
+        <div class="tool" style="box-shadow:none;background:var(--paper)">
+          <div class="toolbar"><span class="tl">Try it · this is what the patient sees</span></div>
+          <div class="streak" id="streakRow"></div>
+          <div class="sreadout" id="streakOut">Log four visits in a row without skipping a week.</div>
+          <div class="sctrl">
+            <button class="sbtn primary" id="logBtn">Log a visit</button>
+            <button class="sbtn danger" id="skipBtn">Skip a week</button>
+          </div>
+        </div>
+        <p>A patient three visits into a streak who is thinking about skipping Thursday is not weighing up whether to attend an appointment. <b>They are weighing up whether to give up a streak.</b> Those are different decisions.</p>
+        <div class="note">
+          <div class="nl">Be honest about what this measures</div>
+          <p>In a patient-reported program the streak tracks <b>logging, not attendance</b>. Someone who comes in and forgets to log breaks their own streak. It is weaker than an attendance-verified streak and you should know that going in. It still earns its place, because logging is the habit that keeps the plan visible to them.</p>
+        </div>
+        <div class="rules">
+          <div class="rule"><span class="rn">01</span><div><b>Four is a reasonable default</b><span>At three visits a week that is about a week and a half. Two is too easy to mean anything. Six is too far away to feel worth protecting.</span></div></div>
+          <div class="rule"><span class="rn">02</span><div><b>Nudge the log, not the visit</b><span>"You've got 3 visits logged. Add this week's and your bonus lands." Highest leverage message in the program.</span></div></div>
+          <div class="rule"><span class="rn">03</span><div><b>One rescue per plan, on request only</b><span>Never automatic, never offered proactively. A patient who asks has just re-engaged.</span></div></div>
+          <div class="rule"><span class="rn">04</span><div><b>Do not build attendance verification</b><span>Tying the streak to the chart means your front desk checking every claim. Real work for a 50 point bonus.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- C5 -->
+  <section class="rv" id="c5">
+    <div class="comp">
+      <div class="chead"><div class="cn">05</div><div><h3>The Reward Menu</h3><div class="cd">Drag the slider to see what a patient unlocks as their balance grows.</div></div></div>
+      <div class="cbody">
+        <div class="meta"><span class="mchip">POINTS LAYER</span><span class="mchip">$15 CAP PER ITEM</span><span class="mchip">KEEP STOCK AT THE DESK</span></div>
+        <div class="tool" style="box-shadow:none;background:var(--paper)">
+          <div class="toolbar"><span class="tl">Patient balance</span><span style="font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--teal)" id="balOut">450 points</span></div>
+          <input class="slider" type="range" id="balSlider" min="0" max="2100" step="25" value="450">
+          <div class="ladder" id="ladder">
+            <div class="tier" data-min="100"><span class="tp">100</span><span><span class="tn">Entry tier</span><span class="ti">Ice or heat pack · kinesiology tape · front of line for one visit</span></span><span class="lock">~5%</span></div>
+            <div class="tier" data-min="300"><span class="tp">300</span><span><span class="tn">Second tier</span><span class="ti">10 minute massage add-on · upgraded therapy · branded bottle or tee</span></span><span class="lock">~15%</span></div>
+            <div class="tier" data-min="700"><span class="tp">700</span><span><span class="tn">Third tier</span><span class="ti">Cervical support pillow · percussion therapy · donation in your name</span></span><span class="lock">~33%</span></div>
+            <div class="tier completion" data-min="2000"><span class="tp">2,000</span><span><span class="tn">Completion tier</span><span class="ti">Any two third-tier rewards · permanent spot on the Plan Completion Wall with a photo</span></span><span class="lock">~95%</span></div>
+          </div>
+          <div class="cap"><b>The completion tier sits just below what a finishing patient accumulates</b>, so it is reachable only by finishing. That is what makes it the most wanted item on the menu even though it costs you no more than the tier below.</div>
+        </div>
+        <div class="rules">
+          <div class="rule"><span class="rn">01</span><div><b>The first reward must be reachable inside the first week</b><span>If your cheapest tier sits weeks away, the patient never engages at all.</span></div></div>
+          <div class="rule"><span class="rn">02</span><div><b>Non-monetary beats discounts</b><span>A massage add-on is perceived as more valuable than $15 off, usually costs less, and does not train patients to expect discounts on care.</span></div></div>
+          <div class="rule"><span class="rn">03</span><div><b>Redemption is your verification point</b><span>Where a claim that does not match the chart becomes visible, without anybody auditing anything.</span></div></div>
+        </div>
+        <div class="stop">
+          <div class="nl">◆ What to leave off</div>
+          <p>Anything that reduces the cost of care, waives a copay or discounts a covered service. Anything tied to a referral or a review. Anything above your chosen threshold. Cash or cash equivalents, including gift cards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- C6 -->
+  <section class="rv" id="c6">
+    <div class="comp">
+      <div class="chead"><div class="cn">06</div><div><h3>The Reactivation Sequence</h3><div class="cd">Four messages over eleven days, to the patients you already lost.</div></div></div>
+      <div class="cbody">
+        <div class="meta"><span class="mchip">FASTEST REVENUE</span><span class="mchip">4 MESSAGES · 11 DAYS</span><span class="mchip">CHECK SMS CONSENT FIRST</span></div>
+        <p><b>Who it goes to:</b> every patient with no visit in the last 90 days who did not complete their plan. In a practice open five years it is commonly several hundred people, and most practices are surprised by the number.</p>
+        <p><b>Not more than four.</b> A patient who ignores four messages is not returning, and continuing past that creates a complaint risk.</p>
+        <div class="sq"><div class="day">DAY 1</div><div class="msg" style="margin-top:0">
+          <div class="mh"><span>The honest one</span><span>NO OFFER</span></div>
+          <div class="mb">Hi [First], it's [Dr. Name]'s office. Looking at your chart, you completed [X] of your [Y] visits and then we lost you. No sales pitch here, I just want to know: did the pain come back, or did life just get busy? Either answer is fine.</div>
+          <div class="why"><b>Why:</b> it reads like a person rather than a practice. The one to keep if you could only send one.</div>
+        </div></div>
+        <div class="sq"><div class="day">DAY 4</div><div class="msg" style="margin-top:0">
+          <div class="mh"><span>The reason</span><span>REFRAME</span></div>
+          <div class="mb">Most people stop once they start feeling better, which for a lot of patients is somewhere around the sixth or eighth visit. That's the tricky part. Feeling better and being corrected happen at different times, which is why the plan ran longer than that. Nothing is lost, we can pick up where you left off.</div>
+          <div class="why"><b>Why:</b> reframes their stopping as normal rather than something to feel defensive about.</div>
+        </div></div>
+        <div class="sq"><div class="day">DAY 8</div><div class="msg" style="margin-top:0">
+          <div class="mh"><span>The mechanism</span><span>PRELOADED BALANCE</span></div>
+          <div class="mb">One thing that's new since you were last in: we started a patient rewards program. You earn points for coming in, doing your exercises and finishing your plan, and you cash them in here at the office for real things. I've already put [X] points on your account for the visits you completed. Book your next visit and they're yours to use.</div>
+          <div class="why"><b>Why the preload works:</b> it is not an offer, it is something they already own and have not collected. Costs you nothing, because they genuinely did attend those visits.</div>
+        </div></div>
+        <div class="sq"><div class="day">DAY 11</div><div class="msg" style="margin-top:0">
+          <div class="mh"><span>The close</span><span>EASY OUT</span></div>
+          <div class="mb">Last one from me, I promise. If you'd like to come back in, reply YES and I'll find you a time. If not, no hard feelings and I hope you're doing well.</div>
+          <div class="why"><b>Why:</b> converts people who ignored the first three. The finality is what prompts a decision.</div>
+        </div></div>
+        <div class="stop">
+          <div class="nl">◆ Before you add a free exam to message 3</div>
+          <p>Offering free or discounted care to bring a patient back is treated very differently from crediting nominal, non-cash reward points, particularly where Medicare or Medicaid patients are involved. The points version carries far less exposure and converts about as well.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="rv">
+    <div class="lbl r">Read before you build</div>
+    <h2>Compliance considerations.</h2>
+    <p class="sub">Not legal advice. A plain English map of where the issues sit, so the conversation with your own counsel is short, specific and inexpensive rather than exploratory.</p>
+    <div class="risk">
+      <div class="rk hi"><span class="rl">Highest risk</span><h4>Referral rewards</h4>
+        <p>The federal Anti-Kickback Statute addresses remuneration intended to induce referrals of federal program business. Many states have their own statutes that apply to all patients.</p>
+        <div class="fix"><b>Why referrals are not in the Earn List.</b> If you want them, that is a specific conversation with an attorney in your state. Do not copy what another practice appears to be doing.</div>
+      </div>
+      <div class="rk hi"><span class="rl">Highest risk</span><h4>Incentivised reviews</h4>
+        <p>Where anything of value is provided in connection with a review, FTC guidance addresses disclosure and prohibits conditioning it on the review being favourable.</p>
+        <div class="fix"><b>A compliant version can be built</b>, deliberately: reward the act of giving feedback regardless of sentiment, disclose the incentive, never condition on positivity.</div>
+      </div>
+      <div class="rk med"><span class="rl">Manage it</span><h4>Inducements to federal beneficiaries</h4>
+        <p>Federal law restricts remuneration to Medicare and Medicaid beneficiaries likely to influence provider choice. A longstanding nominal value concept has historically been applied at levels such as $15 per item and $75 per patient annually. Confirm current figures with counsel.</p>
+        <div class="fix"><b>Two approaches:</b> keep every reward beneath the threshold and track annual totals, or exclude federal beneficiaries. Most prefer the first.</div>
+      </div>
+      <div class="rk med"><span class="rl">Manage it</span><h4>Patient messaging consent</h4>
+        <p><b>A reactivation campaign is a marketing message</b>, not an appointment reminder, and the two are treated differently. Marketing texts require prior consent, a clear opt-out, and immediate honouring of opt-outs.</p>
+        <div class="fix"><b>Before Component 6:</b> check what your intake paperwork says about SMS. Many practices find their forms cover reminders but not marketing.</div>
+      </div>
+    </div>
+    <div class="good">
+      <div class="nl">The lower-risk design is also the effective one</div>
+      <p><b>Reward attendance and self-care. Nothing else.</b></p>
+      <p>You are not offering remuneration to influence which provider a patient chooses. They already chose you and already committed to care you clinically recommended. What is offered is modest, non-cash encouragement to complete it. That is a materially different position from paying someone to bring you business.</p>
+      <p>It also happens to be where the money is. Referrals and reviews are useful. <b>Plan completion is the six-figure number in Part 1.</b></p>
+    </div>
+    <h4 style="margin-top:26px">Pre-launch checklist</h4>
+    <div class="check" id="complyCheck">
+      <label><input type="checkbox"><span>Every reward sits beneath the threshold your counsel confirmed</span></label>
+      <label><input type="checkbox"><span>You track cumulative reward value per patient per year against an annual cap</span></label>
+      <label><input type="checkbox"><span>No reward is cash or a cash equivalent, including gift cards</span></label>
+      <label><input type="checkbox"><span>No reward reduces the cost of care, waives a copay or discounts a covered service</span></label>
+      <label><input type="checkbox"><span>No points are awarded for referrals</span></label>
+      <label><input type="checkbox"><span>No points are awarded for reviews</span></label>
+      <label><input type="checkbox"><span>Your SMS consent language covers marketing, not only reminders</span></label>
+      <label><input type="checkbox"><span>Every message carries a working opt-out, honoured immediately</span></label>
+      <label><input type="checkbox"><span>A healthcare attorney in your state has reviewed your earn list and menu</span></label>
+      <label><input type="checkbox"><span>The program is documented in writing, including who is excluded and why</span></label>
+    </div>
+  </section>
+
+  <div class="next" onclick="goPart(3)">
+    <div><div class="nt">Next: Part 3, The Build</div><div class="nd">Eight steps with honest timings, live calculators, and launch week day by day.</div></div>
+    <span class="na">Open Part 3 →</span>
+  </div>
+</div>
+</div>
+
+<!-- ==================== PART 3 ==================== -->
+<div class="part" id="part3">
+<div class="wrap">
+
+  <header class="cover">
+    <div class="eyebrow"><i></i>Part 3 of 3 · The Workbook</div>
+    <h1>The <span class="hl">Build</span></h1>
+    <p class="dek">Eight steps, in order. Fill it in as you go. Two of them you can finish before your next patient.</p>
+  </header>
+
+  <div class="tracker rv">
+    <div class="ring">
+      <svg width="96" height="96">
+        <circle cx="48" cy="48" r="40" fill="none" stroke="#F1F1EC" stroke-width="9"/>
+        <circle id="ringFg" cx="48" cy="48" r="40" fill="none" stroke="#0F766E" stroke-width="9" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3" style="transition:stroke-dashoffset .5s cubic-bezier(.2,.7,.3,1)"/>
+      </svg>
+      <div class="rt"><span class="rn" id="ringPct">0%</span><span class="rl2">DONE</span></div>
+    </div>
+    <div>
+      <h4 style="margin-bottom:4px">Your progress</h4>
+      <p style="font-size:15px;color:var(--soft);margin:0">Tick a step as you finish it. Nothing is saved between sessions, so work through it in one sitting or print as you go.</p>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+
+  <div class="times rv">
+    <div class="tm"><div class="tn">40 min</div><div class="td">Steps 1 and 2, your numbers</div></div>
+    <div class="tm"><div class="tn">1 week</div><div class="td">Steps 3 and 4, the free components</div></div>
+    <div class="tm"><div class="tn">2 hrs</div><div class="td">Steps 5 to 7, the points layer</div></div>
+    <div class="tm"><div class="tn">5 days</div><div class="td">Step 8, launch week</div></div>
+  </div>
+
+  <div class="fast rv">
+    <div class="fl2">◆ If you only do one thing</div>
+    <h3>Steps 3 and 4 need no software, no budget and no attorney.</h3>
+    <p>They are the two highest-leverage components in the whole system and you can start both this week.</p>
+    <ol>
+      <li><b>Book the progress exam at the ROF</b>, starting with your next new patient. Today.</li>
+      <li><b>Learn the Relief Conversation</b> and deliver it one visit before your relief window.</li>
+    </ol>
+    <p style="margin-top:14px">Do those two and stop there if you want. You will still move your completion rate. Everything after step 4 amplifies them.</p>
+  </div>
+
+  <div id="steps"></div>
+
+  <!-- MEASURE -->
+  <section class="rv">
+    <div class="lbl t">After launch</div>
+    <h2>Then measure.</h2>
+    <p class="sub">Fill this in at baseline, 30, 60 and 90 days.</p>
+    <table>
+      <thead><tr><th>Metric</th><th>Baseline</th><th>Day 30</th><th>Day 60</th><th>Day 90</th></tr></thead>
+      <tbody>
+        <tr><td>PVA</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+        <tr><td>Plan completion rate</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+        <tr><td>Progress exam attendance</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+        <tr><td>No-show rate</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+        <tr><td>Reactivated patients</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+        <tr style="background:var(--teal-bg)"><td><b>% of active patients who logged in last 30 days</b></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+      </tbody>
+    </table>
+    <div class="good">
+      <div class="nl">Read the table in this order</div>
+      <p><b>PVA moves slowly</b>, because it is a twelve month blended figure. Expect progress exam attendance and no-show rate to move first, within thirty days, and PVA to follow over two to three quarters.</p>
+      <p>The teal row is your leading indicator. In a patient-driven program, <b>if logging is low nothing downstream will move.</b></p>
+    </div>
+    <h4 style="margin-top:24px">If nothing has moved by day 90</h4>
+    <div class="res">
+      <div class="rc" style="border-top:3px solid var(--red)"><h4>The Day 1 handoff</h4><p>New patients are not being given the link, so they never enter the program. The most common total failure, and it is a habit problem, not a technical one.</p></div>
+      <div class="rc" style="border-top:3px solid var(--red)"><h4>Click depth</h4><p>Too many screens between opening the link and logging an action. Three clicks is good. Six is a dead program.</p></div>
+      <div class="rc" style="border-top:3px solid var(--red)"><h4>An empty shelf</h4><p>The reward stock is not there when someone comes to collect. The moment is gone, and so is the story they would have told.</p></div>
+    </div>
+  </section>
+
+  <!-- TWO ROADS -->
+  <section class="rv">
+    <div class="lbl t">From here</div>
+    <h2>Two ways to go, and I would rather be straightforward about both.</h2>
+    <p class="sub">Everything above is the complete system. Nothing has been held back. What follows is an honest accounting of what building it actually takes.</p>
+    <div class="roads">
+      <div class="road diy">
+        <div class="rl3">Option A</div>
+        <h3>Build it yourself</h3>
+        <ul>
+          <li>A platform that hosts forms, stores a balance per patient, and sends email and SMS. $97 to $297 a month.</li>
+          <li>A patient-facing page showing balance, earn list and reward menu</li>
+          <li>No EHR integration needed, because the patient logs their own actions</li>
+          <li>Roughly 25 to 40 hours of build and testing</li>
+          <li>Physical reward stock and ongoing messaging costs</li>
+        </ul>
+        <p style="font-size:15px;color:var(--soft);margin-top:14px"><b>If you have someone reasonably technical in the practice and 40 hours available, build it.</b> The system is fully specified.</p>
+      </div>
+      <div class="road dfy">
+        <div class="rl3">Option B</div>
+        <h3>Have it built for you</h3>
+        <ul>
+          <li>Your earn list and reward menu, built and branded</li>
+          <li>The patient-facing page where they log actions and check balances</li>
+          <li>Your progress exam messages and reactivation sequence, loaded</li>
+          <li>You upload your patient list, hand out the link, and start</li>
+        </ul>
+        <p style="color:#B9C2CC;font-size:15px;margin-top:14px;position:relative">Same system described in these three parts. You are not buying different information. <b style="color:#fff">You are buying not having to build it.</b></p>
+        <a class="cta" href="#">[PRICING AND LINK]</a>
+      </div>
+    </div>
+    <div class="guar">
+      <div class="seal">30 DAY<br>GUARANTEE</div>
+      <p>Go through the training and run the retention opportunity calculation with your own numbers. If you do not come away with at least one actionable way to improve patient retention, email us within 30 days and we will refund your purchase.</p>
+    </div>
+    <div class="closing">
+      <h4>Why this exists</h4>
+      <p>I have been in practice for years and I deal with the same retention, compliance, communication and reactivation problems every chiropractor deals with. This document and the platform behind it are an extension of the work I have put into those problems inside my own practice.</p>
+      <p><b>What this is not is a case study.</b> I am not going to tell you it produced a specific figure in my office, because that is not how it happened. It is a framework for where practices lose patients, written down properly, with the measurable parts marked as things for you to measure rather than take on trust.</p>
+      <p style="margin-top:18px"><b>Whether you build it or we build it, do something with the number from Step 1.</b> It is real, it repeats next year, and it is the least expensive money in your practice.</p>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--faint);margin-top:18px">Dr. [Name], DC · [Practice Name], [City]</p>
+    </div>
+  </section>
+</div>
+</div>
+
+<footer><div class="wrap">The Visit 9 Method · An educational product for practice owners. Nothing here is clinical or legal advice, or a promise of income.</div></footer>
+
+<script src="app.js"></script>
+</body>
+</html>
