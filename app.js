@@ -502,3 +502,54 @@ function updateRing(){
 })();
 buildSteps();
 updateRing();
+
+/* ============ PART 3 · plan chooser ============ */
+(function(){
+  var pick={build:null,scope:null};
+  var out=document.getElementById('pickOut');
+  if(!out) return;
+
+  function recommend(){
+    if(!pick.build||!pick.scope){
+      out.innerHTML='Pick one from each row and we will point at the right plan.';
+      highlight(null); return;
+    }
+    var plan, why;
+    if(pick.build==='self'){
+      plan='diy';
+      why = pick.scope==='all'
+        ? '<b>Build it yourself</b> for the retention piece, and look at Liftoff later if the follow-up and marketing side is still unbuilt in three months. You have the full specification either way.'
+        : '<b>Build it yourself.</b> You have the hours and the spec. Start at Step 1 and work the eight steps in order.';
+    } else if(pick.scope==='ret'){
+      plan='stars';
+      why='<b>ChiroStars at $99 a month.</b> Retention and reviews are the gap, and that is exactly what it covers. Your account upgrades to Liftoff later without rebuilding anything.';
+    } else {
+      plan='liftoff';
+      why='<b>ChiroStars + Liftoff at $199 a month.</b> You want the leak stopped and real infrastructure under the rest of the patient journey. One setup, nothing to configure twice.';
+    }
+    out.innerHTML=why;
+    highlight(plan);
+  }
+  function highlight(p){
+    document.querySelectorAll('.plan').forEach(function(el){
+      el.classList.toggle('rec', !!p && el.dataset.plan===p);
+    });
+    if(p){
+      var el=document.querySelector('.plan[data-plan="'+p+'"]');
+      if(el) el.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+  }
+  document.querySelectorAll('.qopts button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var q=b.parentElement.dataset.q;
+      b.parentElement.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on'); pick[q]=b.dataset.v; recommend();
+    });
+  });
+  var rp=document.getElementById('resetPick');
+  if(rp) rp.addEventListener('click',function(){
+    pick={build:null,scope:null};
+    document.querySelectorAll('.qopts button').forEach(function(x){x.classList.remove('on')});
+    recommend();
+  });
+})();
