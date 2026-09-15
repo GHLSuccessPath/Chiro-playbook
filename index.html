@@ -652,42 +652,176 @@
     </div>
   </section>
 
-  <!-- TWO ROADS -->
-  <section class="rv">
+  <!-- ==== PRICING ==== -->
+  <section class="rv" id="pricing">
     <div class="lbl t">From here</div>
-    <h2>Two ways to go, and I would rather be straightforward about both.</h2>
-    <p class="sub">Everything above is the complete system. Nothing has been held back. What follows is an honest accounting of what building it actually takes.</p>
-    <div class="roads">
-      <div class="road diy">
-        <div class="rl3">Option A</div>
-        <h3>Build it yourself</h3>
-        <ul>
-          <li>A platform that hosts forms, stores a balance per patient, and sends email and SMS. $97 to $297 a month.</li>
-          <li>A patient-facing page showing balance, earn list and reward menu</li>
-          <li>No EHR integration needed, because the patient logs their own actions</li>
-          <li>Roughly 25 to 40 hours of build and testing</li>
-          <li>Physical reward stock and ongoing messaging costs</li>
-        </ul>
-        <p style="font-size:15px;color:var(--soft);margin-top:14px"><b>If you have someone reasonably technical in the practice and 40 hours available, build it.</b> The system is fully specified.</p>
+    <h2>Three ways to run this. All of them work.</h2>
+    <p class="sub">Everything in these three parts is the complete system and nothing has been held back. The only question left is who does the building, and how much of the patient journey you want covered.</p>
+
+    <!-- chooser -->
+    <div class="tool chooser">
+      <div class="toolbar"><span class="tl">Not sure which fits? Answer two questions</span><button class="sbtn" id="resetPick">Reset</button></div>
+      <div class="qrow">
+        <div class="q">
+          <div class="ql">1 · Who is building it?</div>
+          <div class="qopts" data-q="build">
+            <button data-v="self">We have someone technical and about 40 hours</button>
+            <button data-v="done">We want it built and running for us</button>
+          </div>
+        </div>
+        <div class="q">
+          <div class="ql">2 · What are you solving right now?</div>
+          <div class="qopts" data-q="scope">
+            <button data-v="ret">Retention and reviews. That is the gap.</button>
+            <button data-v="all">Retention plus follow-up, reactivation and marketing</button>
+          </div>
+        </div>
       </div>
-      <div class="road dfy">
-        <div class="rl3">Option B</div>
-        <h3>Have it built for you</h3>
-        <ul>
-          <li>Your earn list and reward menu, built and branded</li>
-          <li>The patient-facing page where they log actions and check balances</li>
-          <li>Your progress exam messages and reactivation sequence, loaded</li>
-          <li>You upload your patient list, hand out the link, and start</li>
+      <div class="pickout" id="pickOut">Pick one from each row and we will point at the right plan.</div>
+    </div>
+
+    <!-- plan cards -->
+    <div class="plans" id="plans">
+
+      <div class="plan" data-plan="diy">
+        <div class="ptop">
+          <div class="pname">Build It Yourself</div>
+          <div class="pprice"><span class="amt">$0</span><span class="per">from us</span></div>
+          <div class="pdesc">You already own the full specification. Go and build it.</div>
+        </div>
+        <ul class="pfeat">
+          <li>Every point value, message and script from Part 2</li>
+          <li>The 8 step workbook above</li>
+          <li class="neutral">A platform that stores balances and sends SMS, $97 to $297 a month</li>
+          <li class="neutral">A patient-facing page you build</li>
+          <li class="neutral">Roughly 25 to 40 hours of build and testing</li>
+          <li class="neutral">Reward stock and messaging costs on top</li>
         </ul>
-        <p style="color:#B9C2CC;font-size:15px;margin-top:14px;position:relative">Same system described in these three parts. You are not buying different information. <b style="color:#fff">You are buying not having to build it.</b></p>
-        <a class="cta" href="#">[PRICING AND LINK]</a>
+        <div class="pfoot">
+          <div class="pnote">No EHR integration needed, because the patient logs their own actions. That is the hardest part removed.</div>
+          <a class="pbtn2 ghost" href="#steps">Start at Step 1</a>
+        </div>
+      </div>
+
+      <div class="plan featured" data-plan="stars">
+        <div class="ptag">MOST PRACTICES START HERE</div>
+        <div class="ptop">
+          <div class="pname">ChiroStars</div>
+          <div class="pprice"><span class="amt">$99</span><span class="per">/month</span></div>
+          <div class="pdesc">Retention and reputation, live and branded to your practice. Keep the patients you have, protect the reviews you earn.</div>
+        </div>
+        <ul class="pfeat">
+          <li>Loyalty program live and branded, nothing to build</li>
+          <li>Stars, balances and reward confirmations sent automatically</li>
+          <li>A page where patients check their own Stars and rewards</li>
+          <li>The three-option review funnel, already built</li>
+          <li>One dashboard for reviews and private patient feedback</li>
+          <li>Nothing for your front desk to manage day to day</li>
+          <li class="bonus">Bonus: The Visit 9 Method, the full three-part training</li>
+          <li class="bonus">Bonus: Front Desk Launch Kit, counter card and checklist</li>
+        </ul>
+        <div class="pfoot">
+          <div class="pnote"><b>$990/year</b> if paid annually, two months free. No setup fee, no contract, cancel any time. Includes [X] texts a month, additional usage at [rate].</div>
+          <a class="pbtn2" href="#">Get ChiroStars live in [X] days</a>
+        </div>
+      </div>
+
+      <div class="plan dark" data-plan="liftoff">
+        <div class="ptag alt">EVERYTHING RUNNING UNDERNEATH</div>
+        <div class="ptop">
+          <div class="pname">ChiroStars + Liftoff</div>
+          <div class="pprice"><span class="amt">$199</span><span class="per">/month</span></div>
+          <div class="pdesc">The same retention engine, plus the follow-up, reactivation and marketing infrastructure running under it.</div>
+        </div>
+        <ul class="pfeat">
+          <li>Everything in ChiroStars</li>
+          <li>The complete patient journey mapped: new patients, reactivations, outreach, events</li>
+          <li>Automated follow-up for reactivation, reviews, leads and new patient offers, pre-written</li>
+          <li>A chatbot and voice assistant for when the front desk cannot pick up</li>
+          <li>Ready-to-use campaigns for decompression, screenings, weight loss and similar programs</li>
+          <li>Event tools for orientation classes, doctor dinners and screenings</li>
+          <li>Newsletters, social posts, forms and website content ready to customise</li>
+          <li>One setup, nothing to configure twice later</li>
+        </ul>
+        <div class="pfoot">
+          <div class="pnote">No setup fee. No contract. Cancel any time.</div>
+          <a class="pbtn2 light" href="#">Start ChiroStars + Liftoff</a>
+        </div>
       </div>
     </div>
-    <div class="guar">
+
+    <p class="onel"><b>The honest way to choose.</b> If retention and reviews are the only gap you are solving right now, ChiroStars on its own is the right call. Liftoff is for practices ready to stop the leak <i>and</i> put real infrastructure under the rest of the patient journey without building any of it themselves. Your account upgrades later without rebuilding anything, so starting at $99 costs you nothing in the long run.</p>
+
+    <!-- comparison -->
+    <h4 style="margin-top:34px">Line by line</h4>
+    <div class="cmpwrap">
+      <table class="cmp">
+        <thead><tr><th>What you get</th><th>Build it<br>yourself</th><th class="hi">ChiroStars<br><span>$99/mo</span></th><th>+ Liftoff<br><span>$199/mo</span></th></tr></thead>
+        <tbody>
+          <tr><td>The full Visit 9 training and workbook</td><td class="y">✓</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Loyalty program built and branded for you</td><td class="n">you build it</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Patient page for Stars and rewards</td><td class="n">you build it</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Automatic balances and reward confirmations</td><td class="n">you build it</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Three-option review funnel</td><td class="n">—</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Reviews and private feedback in one dashboard</td><td class="n">—</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Front Desk Launch Kit</td><td class="n">—</td><td class="y hi">✓</td><td class="y">✓</td></tr>
+          <tr><td>Automated reactivation and lead follow-up</td><td class="n">—</td><td class="n hi">—</td><td class="y">✓</td></tr>
+          <tr><td>Chatbot and voice assistant</td><td class="n">—</td><td class="n hi">—</td><td class="y">✓</td></tr>
+          <tr><td>Campaigns for decompression, screenings, weight loss</td><td class="n">—</td><td class="n hi">—</td><td class="y">✓</td></tr>
+          <tr><td>Event tools for classes, dinners and screenings</td><td class="n">—</td><td class="n hi">—</td><td class="y">✓</td></tr>
+          <tr><td>Newsletters, social, forms and website content</td><td class="n">—</td><td class="n hi">—</td><td class="y">✓</td></tr>
+          <tr><td><b>Your time to launch</b></td><td class="n">25 to 40 hours</td><td class="y hi">[X] days</td><td class="y">[X] days</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- how chirostars works -->
+    <h4 style="margin-top:38px">How ChiroStars works, on both sides</h4>
+    <div class="howtwo">
+      <div class="hcard">
+        <div class="hl2 t">Retention</div>
+        <h4>Keep the patients you have</h4>
+        <ol class="hsteps">
+          <li>Patients earn Stars for the things you want more of: showing up, confirming, and hitting attendance milestones in their plan.</li>
+          <li>They check their own Stars and rewards any time, without calling your office.</li>
+          <li>Seeing their own progress gives them a reason to keep coming that is not pain. Same reason a loyalty card with two stamps already on it gets finished more often than an empty one.</li>
+        </ol>
+        <div class="hnote">Referral rewards are <b>off by default</b>. Rewarding patients for referrals is regulated differently state to state, so we only switch it on once you have confirmed it with a healthcare attorney in your state.</div>
+      </div>
+      <div class="hcard">
+        <div class="hl2 a">Reputation</div>
+        <h4>Protect the reviews you earn</h4>
+        <ol class="hsteps">
+          <li>After a visit, one question: "How was your experience today?" Excellent, Good, or Poor.</li>
+          <li><b>Excellent</b> goes straight to leaving you a Google review.</li>
+          <li><b>Good or Poor</b> goes to a private form instead, and whatever they write comes straight to you.</li>
+        </ol>
+        <div class="hnote">Happy patients boost your Google rating. Unhappy ones tell you first, quietly, while you can still fix it.</div>
+      </div>
+    </div>
+
+    <div class="guar" style="margin-top:28px">
+      <div class="seal">LIVE IN<br>[X] DAYS</div>
+      <p><b>Our guarantee.</b> Live and branded to your practice within [X] business days, or your first month is free. We onboard [X] practices a month, so every setup gets proper attention.</p>
+    </div>
+
+    <div class="gaps" style="margin-top:14px">
+      <div class="gap" style="background:var(--teal-bg);border-color:#CDE4E1">
+        <div class="gl" style="color:var(--teal)">Who this is for</div>
+        <p style="font-size:15px">Practices that recommend care plans and watch patients stop once they feel better. Practices that want more Google reviews without adding work for the front desk. Solo docs and multi-doc practices. Cash, insurance, PI or mixed.</p>
+      </div>
+      <div class="gap" style="background:var(--red-bg);border-color:#F2D2CA">
+        <div class="gl" style="color:var(--red)">Who it is not for</div>
+        <p style="font-size:15px">Practices whose patients are not starting care in the first place. That is a case acceptance problem and it is worth fixing before anything else. Nothing here substitutes for it.</p>
+      </div>
+    </div>
+
+    <div class="guar" style="margin-top:14px">
       <div class="seal">30 DAY<br>GUARANTEE</div>
-      <p>Go through the training and run the retention opportunity calculation with your own numbers. If you do not come away with at least one actionable way to improve patient retention, email us within 30 days and we will refund your purchase.</p>
+      <p><b>On this training.</b> Go through it and run the retention opportunity calculation with your own numbers. If you do not come away with at least one actionable way to improve patient retention, email us within 30 days and we will refund your purchase.</p>
     </div>
-    <div class="closing">
+
+  <div class="closing">
       <h4>Why this exists</h4>
       <p>I have been in practice for years and I deal with the same retention, compliance, communication and reactivation problems every chiropractor deals with. This document and the platform behind it are an extension of the work I have put into those problems inside my own practice.</p>
       <p><b>What this is not is a case study.</b> I am not going to tell you it produced a specific figure in my office, because that is not how it happened. It is a framework for where practices lose patients, written down properly, with the measurable parts marked as things for you to measure rather than take on trust.</p>
